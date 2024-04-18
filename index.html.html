@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors  </title>
+</head>
+<style>
+  button{
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 25px;
+  }
+  h1{
+    margin: 25px;
+  }
+  #show{
+    font-size: 40px;
+    font-weight: bolder;
+   
+  }
+  #info,#result{
+    margin: 25px;
+    font-size: 30px;
+  }
+  #score{
+    margin: 25px;
+    font-size: 50px;
+    font-weight: bolder;
+  }
+
+</style>
+<body>
+  <h1>Rock Paper Scissors</h2>
+
+
+  <button onclick="
+  human='Rock';
+  rand=Math.floor(Math.random()*3);
+  comp=arr[rand];
+  document.getElementById('info').innerHTML='Human : '+ human +'<br>' + 'Computer : '+ comp;
+  document.getElementById('score').innerHTML='';
+  if(human===comp)
+  {
+    document.getElementById('show').style.border='1px solid black';
+  document.getElementById('show').style.width='450px';
+  document.getElementById('show').style.height='50px';
+  document.getElementById('show').style.margin='25px';
+  document.getElementById('show').style.padding='20px';
+    document.getElementById('show').style.color='Black';
+  document.getElementById('show').innerHTML='Tie.';
+  document.getElementById('result').innerHTML='Win : '+ human_res + '<br>' + 'Lose : '+ comp_res;
+  }
+  else if(human=='Rock' && comp=='Paper' || human=='Paper' && comp=='Scissors' || human=='Scissors' && comp=='Rock'){
+    document.getElementById('show').style.border='1px solid black';
+  document.getElementById('show').style.width='450px';
+  document.getElementById('show').style.height='50px';
+  document.getElementById('show').style.margin='25px';
+  document.getElementById('show').style.padding='20px';
+    document.getElementById('show').style.color='Red';
+    document.getElementById('show').innerHTML='Computer Win.';
+    comp_res++;
+    document.getElementById('result').innerHTML='Win : '+ human_res + '<br>' + 'Lose : '+ comp_res;
+  }
+  else if(human=='Rock' && comp=='Scissors' || human=='Paper' && comp=='Rock' || human=='Scissors' && comp=='Paper')
+  {
+    document.getElementById('show').style.border='1px solid black';
+  document.getElementById('show').style.width='450px';
+  document.getElementById('show').style.height='50px';
+  document.getElementById('show').style.margin='25px';
+  document.getElementById('show').style.padding='20px';
+    document.getElementById('show').style.color='green';
+    document.getElementById('show').innerHTML='You Win.';
+    human_res++;
+    document.getElementById('result').innerHTML='Win : '+ human_res + '<br>' + 'Lose : '+ comp_res;
+  }
+  ">Rock</button>
+
+
+  <button onclick="
+   human='Paper';
+  rand=Math.floor(Math.random()*3);
+  comp=arr[rand];
+  document.getElementById('info').innerHTML='Human : '+ human +'<br>' + 'Computer : '+ comp;
+  document.getElementById('score').innerHTML='';
+  if(human===comp)
+  {
+    document.getElementById('show').style.border='1px solid black';
+  document.getElementById('show').style.width='450px';
+  document.getElementById('show').style.height='50px';
+  document.getElementById('show').style.margin='25px';
+  document.getElementById('show').style.padding='20px';
+    document.getElementById('show').style.color='Black';
+  document.getElementById('show').innerHTML='Tie.';
+  document.getElementById('result').innerHTML='Win : '+ human_res + '<br>' + 'Lose : '+ comp_res;
+  }
+  else if(human=='Rock' && comp=='Paper' || human=='Paper' && comp=='Scissors' || human=='Scissors' && comp=='Rock'){
+    document.getElementById('show').style.border='1px solid black';
+  document.getElementById('show').style.width='450px';
+  document.getElementById('show').style.height='50px';
+  document.getElementById('show').style.margin='25px';
+  document.getElementById('show').style.padding='20px';
+    document.getElementById('show').style.color='Red';
+    document.getElementById('show').innerHTML='Computer Win.';
+    comp_res++;
+    document.getElementById('result').innerHTML='Win : '+ human_res + '<br>' + 'Lose : '+ comp_res;
+    
+  }
+  else if(human=='Rock' && comp=='Scissors' || human=='Paper' && comp=='Rock' || human=='Scissors' && comp=='Paper')
+  {
+    document.getElementById('show').style.border='1px solid black';
+  document.getElementById('show').style.width='450px';
+  document.getElementById('show').style.height='50px';
+  document.getElementById('show').style.margin='25px';
+  document.getElementById('show').style.padding='20px';
+    document.getElementById('show').style.color='Green';
+    document.getElementById('show').innerHTML='You Win.';
+    human_res++;
+    document.getElementById('result').innerHTML='Win : '+ human_res + '<br>' + 'Lose : '+ comp_res;
+  }">Paper</button>
+
+  <button onclick="
+   human='Scissors';
+  rand=Math.floor(Math.random()*3);
+  comp=arr[rand];
+  document.getElementById('info').innerHTML='Human : '+ human +'<br>' + 'Computer : '+ comp;
+  document.getElementById('score').innerHTML='';
+  if(human===comp)
+  {
+    document.getElementById('show').style.border='1px solid black';
+  document.getElementById('show').style.width='450px';
+  document.getElementById('show').style.height='50px';
+  document.getElementById('show').style.margin='25px';
+  document.getElementById('show').style.padding='20px';
+    document.getElementById('show').style.color='Black';
+  document.getElementById('show').innerHTML='Tie.';
+  document.getElementById('result').innerHTML='Win : '+ human_res + '<br>' + 'Lose : '+ comp_res;
+  }
+  else if(human=='Rock' && comp=='Paper' || human=='Paper' && comp=='Scissors' || human=='Scissors' && comp=='Rock'){
+    document.getElementById('show').style.border='1px solid black';
+  document.getElementById('show').style.width='450px';
+  document.getElementById('show').style.height='50px';
+  document.getElementById('show').style.margin='25px';
+  document.getElementById('show').style.padding='20px';
+    document.getElementById('show').style.color='Red';
+    document.getElementById('show').innerHTML='Computer Win.';
+    comp_res++;
+    document.getElementById('result').innerHTML='Win : '+ human_res + '<br>' + 'Lose : '+ comp_res;
+  }
+  else if(human=='Rock' && comp=='Scissors' || human=='Paper' && comp=='Rock' || human=='Scissors' && comp=='Paper')
+  {
+    document.getElementById('show').style.border='1px solid black';
+  document.getElementById('show').style.width='450px';
+  document.getElementById('show').style.height='50px';
+  document.getElementById('show').style.margin='25px';
+  document.getElementById('show').style.padding='20px';
+    document.getElementById('show').style.color='Green';
+    document.getElementById('show').innerHTML='You Win.';
+    human_res++;
+    document.getElementById('result').innerHTML='Win : '+ human_res + '<br>' + 'Lose : '+ comp_res;
+  }">Scissors</button>
+
+  <div id="info">Human :<br>Computer :</div>
+  <div id="show"></div>
+  <div id="result">Win : 0<br>Lose : 0 </div>
+
+  <button onclick="
+  document.getElementById('info').innerHTML='';
+  document.getElementById('show').innerHTML='';
+  document.getElementById('show').style.border='none';
+  document.getElementById('show').style.width='0px';
+  document.getElementById('show').style.height='0px';
+  document.getElementById('show').style.margin='0px';
+  document.getElementById('show').style.padding='0px';
+    if(human_res == comp_res)
+    {
+      document.getElementById('score').style.color='Black';
+      document.getElementById('score').innerHTML='Congrates to Both ..';
+    }
+    else if(human_res > comp_res)
+    {
+      document.getElementById('score').style.color='Green';
+      document.getElementById('score').innerHTML='Congratulations. You Won..!!';
+    }
+    else
+    {
+      document.getElementById('score').style.color='Red';
+      document.getElementById('score').innerHTML=`Better Luck next Time..`;
+    }
+  ">View Score</button>
+
+  <button onclick="
+    rand='';
+    human=' ';
+    comp_res=0;
+    human_res=0;
+    document.getElementById('show').innerHTML='';
+  document.getElementById('show').style.border='none';
+  document.getElementById('show').style.width='0px';
+  document.getElementById('show').style.height='0px';
+  document.getElementById('show').style.margin='0px';
+  document.getElementById('show').style.padding='0px';
+     document.getElementById('result').innerHTML='';
+     document.getElementById('result').innerHTML='Win : 0 <br> Lose : 0' ;
+    document.getElementById('info').innerHTML='';
+     document.getElementById('score').innerHTML='';
+
+  ">Reset</button>
+    
+    <div id="score"></div>
+
+  <script>
+    let human=' ';
+    let arr=['Rock','Paper','Scissors'];
+    let rand='';
+    let comp_res=0;
+    let human_res=0;
+    
+  </script>
+</body>
+</html>
